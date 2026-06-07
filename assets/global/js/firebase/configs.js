@@ -1,0 +1,1 @@
+var firebaseConfig = {"apiKey":"AIzaSyBmV28z1vsM9IpZbSR59qPEH_RM-XaR7u0","authDomain":"ammart-10453.firebaseapp.com","projectId":"ammart-10453","storageBucket":"ammart-10453.firebasestorage.app","messagingSenderId":"463080516248","appId":"1:463080516248:web:029f40a9f537d0490a3eed","measurementId":"G-S1LJ3412EK"}

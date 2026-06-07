@@ -1,0 +1,3 @@
+[04-Jan-2026 05:17:55 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/elevatec/voxvictoria/install/index.php on line 272
+[04-Jan-2026 05:17:55 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/elevatec/voxvictoria/install/index.php on line 291
+[04-Jan-2026 05:17:55 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/elevatec/voxvictoria/install/index.php on line 303

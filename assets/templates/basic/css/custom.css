@@ -1,0 +1,9 @@
+.footer-bg {
+    background-color: #001739 !important;
+}
+
+@media (max-width: 991px) {
+    .mobile-menu-icons {
+       
+        background:#001739 !important;
+    }
