@@ -73,7 +73,7 @@ if ($action == 'requirements') {
 	$dirs = ['../core/bootstrap/cache/', '../core/storage/', '../core/storage/app/', '../core/storage/framework/', '../core/storage/logs/'];
 	foreach ($dirs as $dir) {
 		$perm = substr(sprintf('%o', fileperms($dir)), -4);
-		if ($perm >= '0775') {
+		if ($perm >= '0775' || is_writable($dir)) {
 			$passed[] = str_replace("../", "", $dir) . ' is required 0775 permission';
 		} else {
 			$failed[] = str_replace("../", "", $dir) . ' is required 0775 permission. Current Permisiion is ' . $perm;

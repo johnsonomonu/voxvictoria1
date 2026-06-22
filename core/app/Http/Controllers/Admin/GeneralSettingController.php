@@ -82,6 +82,8 @@ class GeneralSettingController extends Controller
         $general->product_compare = $request->product_compare ? Status::ENABLE : Status::DISABLE;
         $general->subscriber_module = $request->subscriber_module ? Status::ENABLE : Status::DISABLE;
         $general->product_review = $request->product_review ? Status::ENABLE : Status::DISABLE;
+        $general->whatsapp_status = $request->whatsapp_status ? Status::ENABLE : Status::DISABLE;
+        $general->whatsapp_number = $request->whatsapp_number;
         $general->save();
         $notify[] = ['success', 'System configuration updated successfully'];
         return back()->withNotify($notify);

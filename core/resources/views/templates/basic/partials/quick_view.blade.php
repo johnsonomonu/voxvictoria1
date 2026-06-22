@@ -101,6 +101,15 @@
                     <div class="d-flex flex-wrap gap-2">
                         <button class="btn btn--base btn--sm addToCart flex-shrink-0" data-id="{{ $product->id }}" data-product_type="{{ $product->product_type }}" @disabled(!$product->salePrice()) type="button">@lang('Add To Cart')</button>
                         <button class="btn btn--base btn--sm buyNow flex-shrink-0" data-id="{{ $product->id }}" data-product_type="{{ $product->product_type }}" @disabled(!$product->salePrice()) type="button">@lang('Buy Now')</button>
+                        @if (gs('whatsapp_status') && gs('whatsapp_number'))
+                            @php
+                                $whatsappNumber = preg_replace('/[^0-9]/', '', gs('whatsapp_number'));
+                                $whatsappMessage = urlencode("Hello! I'm interested in this product and would like to know more about it.\n\nProduct: " . $product->name . "\n\n" . $product->link() . "\n\nPlease share more details. Thank you!");
+                            @endphp
+                            <a href="https://wa.me/{{ $whatsappNumber }}?text={{ $whatsappMessage }}" target="_blank" class="btn btn--sm flex-shrink-0" style="background-color: #25D366; color: #fff; border: none;">
+                                <i class="lab la-whatsapp"></i> @lang('WhatsApp')
+                            </a>
+                        @endif
                     </div>
                 </div>
                 <div class="product-wishlist d-flex gap-2 mt-3">

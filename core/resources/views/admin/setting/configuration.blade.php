@@ -200,6 +200,31 @@
                                 </div>
                             </li>
 
+                            <li class="list-group-item d-flex flex-wrap flex-sm-nowrap gap-2 justify-content-between align-items-center">
+                                <div>
+                                    <p class="fw-bold mb-0">@lang('WhatsApp Order Button')</p>
+                                    <p class="mb-0">
+                                        <small>@lang('If you enable this module, a WhatsApp button will appear on every product page so customers can enquire or order via WhatsApp.')</small>
+                                    </p>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="checkbox" data-width="100%" data-size="large" data-onstyle="-success" data-offstyle="-danger" data-bs-toggle="toggle" data-height="35" data-on="@lang('Enable')" data-off="@lang('Disable')" name="whatsapp_status" @if (gs('whatsapp_status')) checked @endif>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item d-flex flex-wrap flex-sm-nowrap gap-2 justify-content-between align-items-center">
+                                <div class="flex-grow-1">
+                                    <p class="fw-bold mb-0">@lang('WhatsApp Phone Number')</p>
+                                    <p class="mb-0">
+                                        <small>@lang('Enter the WhatsApp phone number with country code (e.g. +2348101254680). Customers will be redirected to this number.')</small>
+                                    </p>
+                                    <div class="mt-2" style="max-width: 300px;">
+                                        <input type="text" class="form-control" name="whatsapp_number" value="{{ gs('whatsapp_number') }}" placeholder="+2348101254680">
+                                    </div>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                     <div class="card-footer">
