@@ -1,0 +1,34 @@
+# Environment files
+*.env
+.env.*
+
+# Error logs
+error_log
+*.log
+
+# Zip archives (vendor bundles, backups, etc.)
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules
+node_modules/
+
+# Composer vendor (managed via composer install on server)
+core/vendor/
+
+# Storage and cache
+core/storage/*.key
+core/bootstrap/cache/
+
+# Temp files
+core/temp/
